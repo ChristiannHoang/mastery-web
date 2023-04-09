@@ -1,0 +1,425 @@
+/* GLOBAL CSS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn {
+    border: none;
+    background-color: #fdc800;
+    color: #002146;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.6rem 3.6rem;
+    border-radius: 4px;
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    background-color: #002146;
+    color: #fdc800;
+}
+/* ---------------------------------------- */
+/* HEADER CSS */
+.header {
+    padding: 1.6rem 0;
+}
+
+.header__logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__logo-text {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.header__logo-icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    color: #e9bb07;
+    background-color: #002146;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+}
+
+.header__navbar {
+    list-style: none;
+    margin-left: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+.navbar__item {
+    float: left;
+    margin-right: 6rem;
+}
+
+.navbar__item-link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1b1d2d;
+    transition: all .1s ease-in;
+}
+
+.navbar__item-link:hover {
+    color: #e9bb07;
+}
+
+/* CAROUSEL CSS  */
+.carousel {
+    background: url('./img/2.jpg') center top;
+    background-size: cover;
+    height: 65rem;
+}
+
+/* ABOUT CSS  */
+.about {
+    padding: 6.4rem 0;
+}
+
+.about__content, .about__img {
+    width: 50%;
+}
+
+.about__content {
+    display: inline-block;
+    padding-right: 6.4rem;
+}
+
+.content__heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+}
+
+.content__text {
+    font-size: 1.8rem;
+    color: #949494;
+    margin-top: 3.2rem;
+}
+
+.about__img {
+    float: right;
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .btn {
+    margin: 4.2rem 0;
+}
+
+/* INTRODUCE */
+.intro {
+    padding: 6.4rem 0;
+    background-color: #f6f6f6;
+}
+
+.intro__item {
+    width: 25%;
+    float: left;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.intro__item-number {
+    width: 20%;
+    line-height: 6.6rem;
+    font-size: 6rem;
+    float: left;
+    margin-right: 2.8rem;
+}
+
+/* CATEGORIES CARD CSS  */
+.category {
+    padding: 8rem 0;
+}
+
+.categories__list {
+    list-style: none;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+}
+
+.category__item {
+    width: 25%;
+    float: left;
+    padding: 1.6rem;
+}
+
+.category__card {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #002146;
+    padding: 4rem 0;
+    border-radius: 4px;
+}
+
+.category__icon {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 2.8rem;
+}
+
+/* BLOG CSS  */
+.blog {
+    background-color: #f6f6f6;
+    padding: 6.4rem 0;
+}
+
+.blog__post, .blog__event {
+    width: 50%;
+    float: left;
+}
+
+.blog__post {
+    padding-right: 3.2rem;
+}
+
+.blog__event {
+    padding-left: 3.2rem;
+}
+
+.blog__title {
+    font-size: 4rem;
+    padding: 3.2rem 0;
+    color: #1b1d2d;
+}
+
+.post__list, .event__list {
+    background-color: #fff;
+    list-style: none;
+    padding: 0 2.4rem;
+}
+
+.post__item {
+    padding: 3.6rem 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.post__item-link, .event__item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post__item:last-child {
+    border: none;
+}
+
+.post__item-img {
+    width: 33%;
+    display: inline;
+    float: left;
+}
+
+.post__item-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.post__item-content {
+    float: left;
+    width: 67%;
+    padding-left: 2.4rem;
+}
+
+.post__title, .event__title {
+    font-size: 2.2rem;
+}
+
+.post__date {
+    font-size: 1.8rem;
+    color: #999999;
+}
+
+.post__text {
+    font-size: 1.8rem;
+    margin-top: 0.4rem;
+    color: #696969;
+    line-height: 2.8rem;
+    height: 5.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.blog__post .btn {
+    float: right;
+    margin-top: 3.2rem;
+}
+
+.event__heading {
+    margin-left: 2.4rem;
+}
+
+.event__list {
+    background-color: transparent;
+    padding-right: 0;
+}
+
+.event__item {
+    background-color: #fff;
+    margin-bottom: 3.2rem;
+    padding: 2.4rem;
+}
+
+.event__date {
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+} 
+
+.date__ddmm {
+    padding: 0.8rem;
+    background-color: #fdc800;
+}
+
+.date__dd {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.date__mm, .date__yyyy {
+    font-size: 1.8rem;
+}
+
+.date__yyyy {
+    color: #fff;
+    background-color: #002146;
+    padding: 0.4rem;
+}
+
+.event__content {
+    width: 75%;
+    float: left;
+    padding-left: 2.4rem;
+}
+
+.event__text, .event__time-location {
+    font-size: 1.8rem;
+    margin-top: 0.4rem;
+    color: #002146;
+}
+
+.event__text {
+    color: #696969;
+}
+
+.event__time {
+    margin-right: 0.8rem;
+    position: relative;
+}
+
+.event__time::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0.8rem);
+    height: 100%;
+    border-right: 1px solid #efefef;
+
+}
+
+.event__location {
+    margin-left: 0.8rem;
+}
+
+.blog__event .btn {
+    float: right;
+    margin: 3.2rem 0;
+}
+
+/* FOOTER  */
+.footer {
+    background-color: #002146;
+    color: #fff;
+    padding: 6.4rem 0;
+}
+
+.footer__top {
+    margin-bottom: 3.2rem;
+}
+
+.footer .col {
+    float: left;
+    width: calc(100%/3);
+}
+
+.footer__heading {
+    font-size: 2rem;
+}
+
+.footer__list {
+    list-style: none;
+    margin-top: 1.6rem;
+}
+
+.footer__item {
+    padding-right: 3.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.footer__item-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+}
+
+.footer__item-icon {
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 2.5rem;
+    color: #fdc800;
+}
+
+.footer__bottom {
+    border-top: 1px solid #e9bc0779;
+    font-size: 1.6rem;
+    padding-top: 3.2rem;
+}
+
+.footer__copyright-link {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
